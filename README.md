@@ -26,16 +26,18 @@ a small set of instructions fast rather than trying to support many complex inst
 
 ### The control unit contains of four main components:
 
-a.	Clocking logic: The main function of this component is to generate enable signal for the counter in the step generator.
+1.	Clocking logic: The main function of this component is to generate enable signal for the counter in the step generator.
 ![image](https://github.com/NajimAlfutini/NajimAlfutiDesign-A-Full-SRC-Processo/assets/138370248/91639e9c-a1dc-4acb-9609-e4b80ade1568)
 
-b.	The control step generator: contains of a four-bit up counter and control step decoder which give the wanted step. 
+2.	The control step generator: contains of a four-bit up counter and control step decoder which give the wanted step. 
 The counter is with load input because if the counter reserve a Goto6 signal must the step generator go to step 6 by load 0110 to counter.
 ![image](https://github.com/NajimAlfutini/NajimAlfutiDesign-A-Full-SRC-Processo/assets/138370248/842b68a7-2924-4ca8-8eea-a615c826a60a)
 
-c.	Opcode decoder: This decoder will take opcode as input IR<31 …27> and will generate a signal in the wanted instruction.
+3.	Opcode decoder: This decoder will take opcode as input IR<31 …27> and will generate a signal in the wanted instruction.
 
-d.	Control signal encoder: Is the main part in control unit because it contains a Boolean function for each signal. 
+4.	Control signal encoder: Is the main part in control unit because it contains a Boolean function for each signal. 
 
-
+This is all the signals that has Boolean function:  
+![Boolean Functions](https://github.com/NajimAlfutini/NajimAlfutiDesign-A-Full-SRC-Processo/assets/138370248/7229d1b3-0a5c-4574-9567-83a600a1fcb3)
+# 
 
